@@ -12,7 +12,7 @@ let arrayOfObject = [
 ];
 console.log(arrayOfObject);
 
-//Add item to arrau
+//Add item to array
 arrayOfObject.push({
   firstName: 'Bruce',
   lastName: 'Banner',
