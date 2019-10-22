@@ -1,35 +1,21 @@
-function longestPalindrome(str1, str2) {
-  var arr = str1.split('') + str2.split('');
-  var endArr = [];
-
-  for (var i = 0; i < arr.length; i++) {
-    var temp = '';
-    temp = arr[i];
-    for (var j = i + 1; j < arr.length; j++) {
-      temp += arr[j];
-      if (
-        temp.length > 2 &&
-        temp ===
-          temp
-            .split('')
-            .reverse()
-            .join('')
-      ) {
-        endArr.push(temp);
+function countPalindrome(string1, string2) {
+  let count = 0;
+  function check(string) {
+    while (string.length >= string2.length) {
+      if (string2 === string.substring(0, string2.length)) {
+        count++;
       }
+      string = string.substring(1);
     }
   }
-
-  var count = 0;
-  var longestPalindrome = '';
-  for (var i = 0; i < endArr.length; i++) {
-    if (count >= endArr[i].length) {
-      longestPalindrome = endArr[i - 1];
-    } else {
-      count = endArr[i].length;
-    }
-  }
-  return console.log(longestPalindrome.length);
+  check(string1);
+  check(
+    string1
+      .split('')
+      .reverse()
+      .join('')
+  );
+  return count + ' Kali';
 }
 
-longestPalindrome('bananananana', 'nananana');
+console.log(countPalindrome('banananana', 'nana'));
