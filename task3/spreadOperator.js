@@ -16,20 +16,19 @@ let persons = [
 ];
 console.log('Before : ');
 console.log(persons);
-console.log('\n============================\n');
 
 let changedPersonData = persons.map(data => {
   let returnVal = { ...data };
 
-  switch (data.name) {
+  switch (returnVal.name) {
     case 'Tatas':
-      data.status = 'maried';
-      data.city = 'Jakarta';
+      returnVal.status = 'maried';
+      returnVal.city = 'Jakarta';
       break;
 
     case 'Pratama':
-      data.company = 'Arkademy';
-      data.city = 'Jogja';
+      returnVal.company = 'Arkademy';
+      returnVal.city = 'Jogja';
       break;
 
     default:
@@ -39,5 +38,7 @@ let changedPersonData = persons.map(data => {
   return returnVal;
 });
 
-console.log('After : ');
+console.log('After  (Original data): ');
 console.log(persons);
+console.log('After  (Changed data): ');
+console.log(changedPersonData);
