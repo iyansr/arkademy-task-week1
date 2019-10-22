@@ -45,7 +45,7 @@
 
 - [ ] Array Of Numbers Return One Digit Number
 - [x] Matrix Transpose
-- [ ] Matrices Multiplication
+- [x] Matrices Multiplication
 
 ## How To Run
 
@@ -63,3 +63,7 @@ $ npm install
 $ cd task1
 $ node arrayOfObject.js
 ```
+
+---
+
+Copyright © 2019 by I Putu Saputrayana
