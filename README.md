@@ -1,4 +1,4 @@
-# 👨‍💻 Arkademy Task Week 1
+# 👨‍💻Arkademy Task Week 1
 
 <p align="center">
   <a href="https://arkademy.com/">
