@@ -10,8 +10,8 @@ const imaginationTree = (start, year) => {
       //when fall season
       tree += 1;
     }
-    console.log(`Start height : ${start}`)
-    console.log(`Year : ${year}`)
+    console.log(`Start height : ${start}`);
+    console.log(`Year : ${year}`);
     console.log(`Total tree height = ${tree}`);
   } else {
     console.log('Start height and year should be higher than 0 :)');
