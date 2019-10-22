@@ -31,7 +31,7 @@
 - [x] Prime Triangle
 - [x] Imaginative Tree
 - [x] Data Sorting
-- [ ] Palindrome
+- [x] Palindrome
 - [x] Decimal To Binary
 
 ### Task 3
