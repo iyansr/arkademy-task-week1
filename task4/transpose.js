@@ -11,8 +11,8 @@ const transposeMatrix = matrix => {
   for (let i = 0; i < matrix.length; i++) {
     m.push([]);
   }
-  for (let i = 0; i < matrix[0].length; i++) {
-    for (let j = 0; j < matrix.length; j++) {
+  for (let i = 0; i < matrix.length; i++) {
+    for (let j = 0; j < matrix[0].length; j++) {
       m[j].push(matrix[i][j]);
     }
   }
