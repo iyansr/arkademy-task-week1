@@ -5,8 +5,18 @@ let m = [
   [7,8,9]
 ]
 
-const transpose = array => {
-  return array[0].map((_, c) => array.map(r => r[c]));
+const transposeMatrix = matrix => {
+  let m = [];
+
+  for (let i = 0; i < matrix.length; i++) {
+    m.push([]);
+  }
+  for (let i = 0; i < matrix[0].length; i++) {
+    for (let j = 0; j < matrix.length; j++) {
+      m[j].push(matrix[i][j]);
+    }
+  }
+  return m;
 };
 
-console.log(transpose(m));
+console.table(transposeMatrix(m));
