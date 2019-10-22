@@ -1,3 +1,5 @@
+const readline = require('readline-sync');
+
 const ConvertToBinary = num => {
   let bits = []; //Store binary
   let remainder = 0;
@@ -11,4 +13,5 @@ const ConvertToBinary = num => {
   return console.log(bits.join(''));
 };
 
-ConvertToBinary(12);
+const num = readline.question('Input Number : ');
+ConvertToBinary(num);
