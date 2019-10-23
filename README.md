@@ -43,7 +43,7 @@
 
 ### Task 4
 
-- [ ] Array Of Numbers Return One Digit Number
+- [x] Array Of Numbers Return One Digit Number
 - [x] Matrix Transpose
 - [x] Matrices Multiplication
 
