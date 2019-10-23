@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://arkademy.com/">
-    <img title="React Redux" src="https://forum.teknologi.id/uploads/discuss/media/501011545189495.png">
+    <img title="React Redux" height='200px' src="https://forum.teknologi.id/uploads/discuss/media/501011545189495.png">
   </a>
 </p>
 
