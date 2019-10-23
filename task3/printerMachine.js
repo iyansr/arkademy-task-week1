@@ -1,5 +1,5 @@
 const alphabet = ['q', 'w', 'z', 'x', 'e', 'r'];
-const command = [true, false, false, true, false, true, true];
+const command = [true, false, false, true, false, true];
 
 const printerMachine = (alpha, cmd) => {
   let ar = [];
