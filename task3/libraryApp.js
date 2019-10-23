@@ -33,4 +33,4 @@ let result = getStatusByTitle('Distance Blues', books);
 console.log(result);
 
 const availableBooks = books.filter(data => data.status === 'available');
-console.log(availableBooks);
+console.table(availableBooks);

@@ -40,6 +40,7 @@ const getModus = array => {
       maxCount = modeMap[el];
     }
   }
+  console.log(modeMap);
   return maxEl;
 };
 console.log('Most frequent numbers: ', getModus(numbers));

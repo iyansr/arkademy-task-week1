@@ -5,7 +5,7 @@ function multiplyMatrices(m1, m2) {
     bNumCols = m2[0].length;
   let result = [];
 
-  if (m1.length !== m2[0].length) {
+  if (aNumRows !== bNumCols) {
     console.log('Matrices cannot be multiplied 🙁 ');
   } else {
     for (let i = 0; i < aNumRows; i++) {

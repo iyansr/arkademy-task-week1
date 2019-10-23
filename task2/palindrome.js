@@ -9,12 +9,9 @@ function countPalindrome(string1, string2) {
     }
   }
   check(string1);
-  check(
-    string1
-      .split('')
-      .reverse()
-      .join('')
-  );
+
+  //prettier-ignore
+  check(string1.split('').reverse().join(''));
   return count + ' Kali';
 }
 

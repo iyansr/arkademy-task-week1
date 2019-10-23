@@ -15,7 +15,7 @@ let persons = [
   }
 ];
 console.log('Before : ');
-console.log(persons);
+console.table(persons);
 
 let changedPersonData = persons.map(data => {
   let returnVal = { ...data };
@@ -39,6 +39,6 @@ let changedPersonData = persons.map(data => {
 });
 
 console.log('After  (Original data): ');
-console.log(persons);
+console.table(persons);
 console.log('After  (Changed data): ');
-console.log(changedPersonData);
+console.table(changedPersonData);

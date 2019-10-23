@@ -1,11 +1,10 @@
 const imaginationTree = (start, year) => {
-  let tree = start;
-
   if (start > 0 && year > 0) {
+    let tree = start;
     for (let i = 0; i < year; i++) {
       //prettier-ignore
       //when spring season
-      tree = tree + (tree * 2);
+      tree = tree * 2;
 
       //when fall season
       tree += 1;
@@ -18,4 +17,4 @@ const imaginationTree = (start, year) => {
   }
 };
 
-imaginationTree(2, 1);
+imaginationTree(2, 2);
