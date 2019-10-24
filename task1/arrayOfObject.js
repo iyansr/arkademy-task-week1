@@ -22,6 +22,7 @@ console.log(arrayOfObject)
 
 //Delete item from array
 arrayOfObject.splice(1)
+console.log('delete :')
 console.log(arrayOfObject)
 
 //Change value of array
