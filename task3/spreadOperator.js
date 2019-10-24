@@ -13,32 +13,32 @@ let persons = [
     status: 'single',
     city: 'Jakarta'
   }
-];
-console.log('Before : ');
-console.table(persons);
+]
+console.log('Before : ')
+console.table(persons)
 
 let changedPersonData = persons.map(data => {
-  let returnVal = { ...data };
+  let returnVal = { ...data }
 
   switch (returnVal.name) {
     case 'Tatas':
-      returnVal.status = 'maried';
-      returnVal.city = 'Jakarta';
-      break;
+      returnVal.status = 'maried'
+      returnVal.city = 'Jakarta'
+      break
 
     case 'Pratama':
-      returnVal.company = 'Arkademy';
-      returnVal.city = 'Jogja';
-      break;
+      returnVal.company = 'Arkademy'
+      returnVal.city = 'Jogja'
+      break
 
     default:
-      console.log('Data not found');
-      break;
+      console.log('Data not found')
+      break
   }
-  return returnVal;
-});
+  return returnVal
+})
 
-console.log('After  (Original data): ');
-console.table(persons);
-console.log('After  (Changed data): ');
-console.table(changedPersonData);
+console.log('After  (Original data): ')
+console.table(persons)
+console.log('After  (Changed data): ')
+console.table(changedPersonData)

@@ -6,17 +6,17 @@ let m = [
 ]
 
 const transposeMatrix = matrix => {
-  let m = [];
+  let m = []
 
-  for (let i = 0; i < matrix.length; i++) {
-    m.push([]);
+  for (let i = 0; i < matrix[0].length; i++) {
+    m.push([])
   }
   for (let i = 0; i < matrix.length; i++) {
     for (let j = 0; j < matrix[0].length; j++) {
-      m[j].push(matrix[i][j]);
+      m[j].push(matrix[i][j])
     }
   }
-  return m;
-};
+  return m
+}
 
-console.table(transposeMatrix(m));
+console.table(transposeMatrix(m))

@@ -1,46 +1,46 @@
-let numbers = [2, 23, 43, 12, 6, 4, 10, 89, 32, 43, 32];
+let numbers = [2, 23, 43, 12, 6, 4, 10, 89, 32, 43, 32, 43]
 
 const getMean = array => {
-  let totalAll = 0;
+  let totalAll = 0
   for (let i = 0; i < array.length; i++) {
     //
-    totalAll += array[i];
+    totalAll += array[i]
   }
-  const result = totalAll / array.length;
-  return result;
-};
-console.log('Average value: ', getMean(numbers));
+  const result = totalAll / array.length
+  return result
+}
+console.log('Average value: ', getMean(numbers))
 
 const getMedian = array => {
   array.sort(function(a, b) {
-    return a - b;
-  });
+    return a - b
+  })
 
-  var half = Math.floor(array.length / 2);
-  return array[half];
-};
-console.log('Middle number in array: ', getMedian(numbers));
+  var half = Math.round(array.length / 2)
+  return array[half]
+}
+console.log('Middle number in array: ', getMedian(numbers))
 
 const getModus = array => {
-  if (array.length == 0) return null;
-  let modeMap = {};
-  let maxEl = array[0];
-  let maxCount = 1;
+  if (array.length == 0) return null
+  let modeMap = {}
+  let maxEl = array[0]
+  let maxCount = 1
 
   for (let i = 0; i < array.length; i++) {
-    let el = array[i];
+    let el = array[i]
 
     if (modeMap[el] == null) {
-      modeMap[el] = 1;
+      modeMap[el] = 1
     } else {
-      modeMap[el]++;
+      modeMap[el]++
     }
     if (modeMap[el] > maxCount) {
-      maxEl = el;
-      maxCount = modeMap[el];
+      maxEl = el
+      maxCount = modeMap[el]
     }
   }
-  console.log(modeMap);
-  return maxEl;
-};
-console.log('Most frequent numbers: ', getModus(numbers));
+  console.log(modeMap)
+  return maxEl
+}
+console.log('Most frequent numbers: ', getModus(numbers))
